@@ -1,0 +1,70 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+
+    <title> 
+        Cigarro Counter
+    </title>
+</head>
+
+<body>
+    <ul>
+        <li><a href={% url 'homepage' %}>Home</a></li>
+        <li><a href={% url 'index' %}>Sign In</a></li>
+        <li><a href="Mercado.html">Mercado</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href={% url 'about' %}>Sobre</a></li>
+    </ul>
+
+    <br><br>
+
+
+    <h1>
+        Seja bem vindo. 
+    </h1>
+
+    <a href="signin.html"></a>
+    <button type="button" class=icr>
+        Se inscreva e crie sua conta agora!
+    </button>
+    </a>
+
+<h1>
+    <div id="title">
+        <h1>
+            STOP ADICTION
+        </h1>
+    </div>
+
+    <div id="subtitulo">
+        Se você fumou um cigarro, clique o botão abaixo: <br><br>
+    </div>
+
+    <div id="button">
+        <script type="text/javascript">
+            var clicks = 0;
+            function onClick() {
+                clicks += 1;
+                document.getElementById("clicks").innerHTML = clicks;
+            };
+        </script>
+        <button type="button" onClick="onClick()" class="button">+</button>
+        
+        <h3>CIGARROS FUMADOS HOJE: <a id="clicks">0</a></h3>
+
+        <script type="text/javascript">
+            function onClick1() {
+                clicks -= 1;
+                document.getElementById("clicks").innerHTML = clicks;
+            };
+        </script>
+        <button type="button" onClick="onClick1()" class="button">-</button>
+    </div>
+</h1>
+
+    <br><br><br>
+</body>
+

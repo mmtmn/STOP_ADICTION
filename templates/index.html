@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+
+    <title> 
+        Cigarro Counter
+    </title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="Mercado.html">Mercado</a></li>
+        <li><a href={% url 'homepage' %}>Sign Out</a></li>
+        <li><a href={% url 'about' %}>Sobre</a></li>
+    </ul>
+    <div id="username">
+        Hello, user1
+    </div>
+
+    <br><br>
+
+    <div id="title">
+        <h1>
+            STOP ADICTION
+        </h1>
+    </div>
+
+    <div id="subtitulo">
+        <h3>
+            Se você fumou um cigarro, clique o botão abaixo:
+        </h3>
+    </div>
+
+    <div id="button">
+        <script type="text/javascript">
+            var clicks = 0;
+            function onClick() {
+                clicks += 1;
+                document.getElementById("clicks").innerHTML = clicks;
+            };
+        </script>
+        <button type="button" onClick="onClick()" class="button">+</button>
+        
+        <h3>CIGARROS FUMADOS HOJE: <a id="clicks">0</a></h3>
+
+        <script type="text/javascript">
+            function onClick1() {
+                clicks -= 1;
+                document.getElementById("clicks").innerHTML = clicks;
+            };
+        </script>
+        <button type="button" onClick="onClick1()" class="button">-</button>
+    </div>
+</body>

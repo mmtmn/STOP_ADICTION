@@ -1,0 +1,32 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+
+    <title> 
+        Cigarro Counter
+    </title>
+</head>
+
+<body>
+    <ul>
+        <li><a href={% url 'homepage' %}>Home</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="Mercado.html">Mercado</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href={% url 'about' %}>Sobre</a></li>
+    </ul>
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
+    <h1>Sobre:</h1>
+    <h3>Esse projeto foi criado para ajudar você, 
+    <h3>ou alguém que você conhece,</h3> 
+    <h2>a diminuir os vícios.</h2>
+    <br><br>
+</body>
