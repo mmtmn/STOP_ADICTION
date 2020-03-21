@@ -14,18 +14,15 @@
     <ul>
         <li><a href={% url 'homepage' %}>Home</a></li>
         <li><a href={% url 'index' %}>Sign In</a></li>
-        <li><a href={% url 'register' %}>Sign up</a></li>
         <li><a href={% url 'about' %}>Sobre</a></li>
     </ul>
+    <br><br>
+    <h1>STOP THE ADDICTION</h1>
+    <h2>Register</h2>
+    <br><br>
 
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-
-    <h1>STOP THE ADDICTION:</h1>
-    <h3>Esse projeto foi criado para ajudar você,</h3> 
-    <h3>ou alguém que você conhece,</h3> 
-    <h2>a diminuir os vícios.</h2>
-    <br><br>
+    <form method="POST" class="form-group">
+        {{form}}
+        <button type="submit" class="btn btn-sucess">Register</button>
+    </form> 
 </body>
